@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weryfikator</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="weryfikator-popup">
+      <h1 class="weryfikator-popup-title">Weryfikator</h1>
+      <p class="weryfikator-popup-hint"><kbd>F2</kbd> = 1 odpowiedź | <kbd>F3</kbd> = kilka | <kbd>F4</kbd> = otwarte</p>
+      <button type="button" id="weryfikator-btn-select" class="weryfikator-popup-btn weryfikator-popup-btn-secondary">Wybierz obszar</button>
+      <label class="weryfikator-popup-label" for="weryfikator-popup-question">Wskazówka (opcjonalne)</label>
+      <input type="text" id="weryfikator-popup-question" class="weryfikator-popup-input" placeholder="np. odpowiedz jednym słowem" />
+      <button type="button" id="weryfikator-btn-analyze" class="weryfikator-popup-btn">Analizuj</button>
+      <p id="weryfikator-popup-status" class="weryfikator-popup-status" aria-live="polite"></p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

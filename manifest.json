@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Weryfikator",
+  "version": "1.0.0",
+  "description": "Wybierz obszar, naciśnij F2 – AI odpowie na pytanie bez utraty focusa.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": [
+    "<all_urls>",
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Weryfikator – F2 = analiza"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}
