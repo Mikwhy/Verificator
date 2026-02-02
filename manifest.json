@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Weryfikator",
   "version": "1.0.0",
-  "description": "Wybierz obszar, naciśnij F2 – AI odpowie na pytanie bez utraty focusa.",
+  "description": "Select area, press F2 - AI answers quiz questions without losing focus.",
   "permissions": ["activeTab", "scripting", "storage", "tabs"],
   "host_permissions": [
     "<all_urls>",
@@ -10,7 +10,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Weryfikator – F2 = analiza"
+    "default_title": "Weryfikator - F2 = analyze"
   },
   "background": {
     "service_worker": "background.js"
